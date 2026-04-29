@@ -280,24 +280,6 @@ function mulberry32(a) {
   };
 }
 
-// ── Lighthouse mark (simplified from the logo) ──────────────────────────
-window.Lighthouse = function Lighthouse({ size = 28, mono = false }) {
-  const navy = mono ? 'currentColor' : BRAND.navy;
-  const rust = mono ? 'currentColor' : BRAND.rust;
-  return (
-    <svg width={size} height={size} viewBox="0 0 32 32" fill="none" style={{ flexShrink: 0 }}>
-      <path d="M16 3 L13.5 6 L13.5 9 L18.5 9 L18.5 6 Z" fill={navy} />
-      <rect x="14" y="9" width="4" height="2" fill={navy} />
-      <rect x="13" y="11" width="6" height="1.5" fill={navy} />
-      <path d="M14 12.5 L14 19 L13 19 L13 26 L19 26 L19 19 L18 19 L18 12.5 Z" fill="#fff" stroke={navy} strokeWidth="1" />
-      <rect x="14" y="15" width="4" height="4" fill={rust} />
-      <rect x="15" y="21" width="2" height="3" fill={navy} opacity="0.9" />
-      <path d="M8 26 Q16 22 24 26 L24 28 Q16 24 8 28 Z" fill={navy} opacity="0.7" />
-      <circle cx="16" cy="4.5" r="0.8" fill={rust} />
-    </svg>
-  );
-};
-
 // ── Site header (shared across variants) ───────────────────────────────
 window.SiteHeader = function SiteHeader({ onNav, current = 'home', inverted = false }) {
   const items = [
@@ -315,9 +297,8 @@ window.SiteHeader = function SiteHeader({ onNav, current = 'home', inverted = fa
       borderBottom: `1px solid ${inverted ? 'rgba(245,241,232,0.12)' : BRAND.hair}`,
     }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
-        <Lighthouse size={22} mono={inverted} />
         <span className="wn-display" style={{ fontSize: 17, fontWeight: 600, letterSpacing: '-0.02em' }}>
-          Why Not In-Network?
+          IDR analysis
         </span>
       </div>
       <nav style={{ display: 'flex', gap: 2, alignItems: 'center' }}>

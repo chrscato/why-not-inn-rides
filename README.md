@@ -1,4 +1,4 @@
-# Why Not In-Network?
+# IDR analysis
 
 Static "rides" view for the federal IDR Public Use File — receipt-style
 visualizations comparing IDR-awarded amounts against nearby in-network

@@ -57,8 +57,6 @@ window.LandingReceipt = function LandingReceipt({ ride, onCTA }) {
         gap: 12,
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 12, minWidth: 0 }}>
-          <img src={(window.__resources && window.__resources.logo) || 'assets/logo.png'} alt=""
-            style={{ height: vp.isMobile ? 30 : 38, flexShrink: 0, filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.2))' }} />
           <div style={{ minWidth: 0 }}>
             <div style={{
               fontFamily: FONT.display,
@@ -66,13 +64,8 @@ window.LandingReceipt = function LandingReceipt({ ride, onCTA }) {
               fontWeight: 700, letterSpacing: '0.2px', lineHeight: 1.1,
               whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis',
             }}>
-              Why Not In-Network?
+              IDR analysis
             </div>
-            {!vp.isMobile && (
-              <div style={{ fontSize: 11, color: 'rgba(255,255,255,0.7)', fontWeight: 500 }}>
-                An alternative analysis of IDR disputes
-              </div>
-            )}
           </div>
         </div>
         {!vp.isMobile && (
